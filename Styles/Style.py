@@ -27,7 +27,7 @@ class Styles(ttk.Style):
             background=COLOR_PRIMARY
         )
         self.configure(
-            'DataFrame.TFrame',
+            'CasesFrame.TFrame',
             background=COLOR_SECONDARY
         )
 
