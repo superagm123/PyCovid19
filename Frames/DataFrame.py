@@ -89,13 +89,13 @@ class DataFrame(ttk.Frame):
             confirmed = response[country_name]['confirmed']
             recovered = response[country_name]['recovered']
             deaths = response[country_name]['deaths']
-            self.set_data_reulsts(confirmed, recovered, deaths)
+            self.set_data_results(confirmed, recovered, deaths)
         except KeyError:
             messagebox.showerror('Error', 'Unexpected error trying to fetch data.')
         except TypeError:
             messagebox.showwarning('invalid country name', 'please enter a valid country name')
 
-    def set_data_reulsts(self, confirmed, recovered, deaths):
+    def set_data_results(self, confirmed, recovered, deaths):
         self.confirmed_cases_result.set(confirmed)
         self.recovered_cases_result.set(recovered)
         self.death_cases_result.set(deaths)
